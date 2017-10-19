@@ -1,0 +1,10 @@
+<div class="card">
+  <div class="card-header">
+    <i class="alarm outline icon"></i> Alarm
+  </div>
+  <div class="card-block">
+    <button type="button" class="btn btn-primary" (click)="play()">Start Alarm</button>
+    <div>Log:</div>
+    <div *ngFor="let message of messages">"{{ message["message"] }}" at {{ message["timestamp"] | date: 'medium' }}</div>
+  </div>
+</div>

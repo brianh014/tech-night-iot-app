@@ -1,0 +1,10 @@
+<div class="card">
+  <div class="card-header">
+    <i class="idea icon"></i> Flash LED
+  </div>
+  <div class="card-block">
+    <button type="button" class="btn btn-primary" (click)="flash()">Flash the LED</button>
+    <div>Log:</div>
+    <div *ngFor="let message of messages">"{{ message["message"] }}" at {{ message["timestamp"] | date: 'medium' }}</div>
+  </div>
+</div>
